@@ -8,15 +8,19 @@
     <fragment
         android:id="@+id/dashFragment"
         android:name="com.pisteapp.bartender.UI.DashFragment"
-        android:label="fragment_dash"
+        android:label="@string/title_dash_fragment"
         tools:layout="@layout/fragment_dash" >
         <action
             android:id="@+id/action_dashFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.pisteapp.bartender.UI.DetailFragment"
-        android:label="fragment_detail"
+        android:label="@string/title_detail_fragment"
         tools:layout="@layout/fragment_detail" />
 </navigation>
